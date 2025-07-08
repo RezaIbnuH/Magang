@@ -14,7 +14,7 @@ body {
 
 /* ========== NAVBAR ========== */
 .navbar {
-  background-color: #3498db;
+  background-color: #1a96e9;
   padding: 0.8rem 2rem;
   display: flex;
   align-items: center;
@@ -22,6 +22,10 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.navbar p{
+  color: white;
 }
 
 .navbar-logo img {
@@ -143,4 +147,35 @@ body {
     position: static;
     width: 100%;
   }
+}
+
+/* Search */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="search"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-form button {
+  background-color: #1a96e9;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form button i {
+  color: white;
+  width: 20px;
+  height: 20px;
 }
