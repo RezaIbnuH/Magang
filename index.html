@@ -1,136 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+  <!-- Feather Icons CDN -->
+  <script src="https://unpkg.com/feather-icons"></script>
 
-    <!-- Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <title>BPMP Provinsi Riau</title>
 </head>
 <body>
-    <!-- Navbar Start -->
-    <nav class="navbar">
-      <a href="index.html" class="navbar-logo"><img src="img/g1.png" alt="Logo" /></a>
-      <p>BPMP Provinsi Riau</p>
 
-  <ul class="navbar-nav">
-    <!-- Beranda -->
-    <li><a href="index.html">Beranda</a></li>
+  <!-- Navbar Start -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-logo">
+      <img src="img/g1.png" alt="Logo" />
+    </a>
+    <a href="index.html"><p>BPMP Provinsi Riau</p></a>
 
-    <!-- Tentang Kami -->
-    <li><a href="#tentang-kami">Tentang Kami</a>
-      <ul class="dropdown">
-        <li><a href="#profil-ppid">Profil PPID</a></li>
-        <li><a href="#tugas-fungsi-ppid">Tugas dan Fungsi PPID</a></li>
-        <li><a href="#visi-misi-ppid">Visi dan Misi PPID</a></li>
-        <li><a href="#struktur-organisasi">Struktur Organisasi PPID</a></li>
-        <li><a href="#alamat-kontak">Alamat dan Kontak PPID</a></li>
-        <li><a href="#profil-pejabat">Profil Pejabat</a></li>
-        <li><a href="#sk-ppid">SK PPID</a></li>
-        <li><a href="#lhkpn">LHKPN Pejabat</a></li>
-      </ul>
-    </li>
+    <!-- Tombol menu hamburger -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i data-feather="menu"></i>
+    </div>
 
-    <!-- Standar Layanan -->
-    <li><a href="#standar-layanan">Standar Layanan</a>
-      <ul class="dropdown">
-        <li><a href="#maklumat-pelayanan">Maklumat Pelayanan</a></li>
-        <li><a href="#prosedur-permohonan">Prosedur Permohonan Informasi</a></li>
-        <li><a href="#prosedur-keberatan">Prosedutr Pengajuan Keberatan</a></li>
-        <li><a href="#prosedur-sengketa">Prosedur Sengketa Informasi</a></li>
-        <li><a href="#pos-ap-ppid">POS AP PPID</a></li>
-        <li><a href="#alur-biaya">Alur dan Biaya Layanan</a></li>
-      </ul>
-    </li>
+    <!-- Navigation Links -->
+    <ul class="navbar-nav" id="navbar-nav">
+      <li><a href="index.html">Beranda</a></li>
 
-    <!-- Informasi Publik -->
-    <li><a href="#informasi-publik">Informasi Publik</a>
-      <ul class="dropdown">
-        <li><a href="#daftar-informasi">Daftar Informasi Publik</a></li>
-        <li><a href="#informasi-publik-berkala">Informasi Publik Berkala</a></li>
-        <li><a href="#informasi-tiap-saat">Informasi Publik Tersedia Setiap Saat</a></li>
-        <li><a href="#informasi-serta-merta">Informasi Serta Merta</a></li>
-      </ul>
-    </li>
+      <li><a href="#tentang-kami">Tentang Kami</a>
+        <ul class="dropdown">
+          <li><a href="#profil-ppid">Profil PPID</a></li>
+          <li><a href="#tugas-fungsi-ppid">Tugas dan Fungsi PPID</a></li>
+          <li><a href="#visi-misi-ppid">Visi dan Misi PPID</a></li>
+          <li><a href="#struktur-organisasi">Struktur Organisasi PPID</a></li>
+          <li><a href="#alamat-kontak">Alamat dan Kontak PPID</a></li>
+          <li><a href="#profil-pejabat">Profil Pejabat</a></li>
+          <li><a href="#sk-ppid">SK PPID</a></li>
+          <li><a href="#lhkpn">LHKPN Pejabat</a></li>
+        </ul>
+      </li>
 
-    <!-- Laporan -->
-    <li><a href="#laporan">Laporan</a>
-      <ul class="dropdown">
-        <li><a href="#daftar-permohonan-informasi">Daftar Permohonan Informasi Publik</a></li>
-        <li><a href="#laporan-tahunan">Laporan Tahunan PPID</a>
-          <ul class="dropd">
-            <li><a href="#laporan-2024">Laporan PPID Tahun 2024</a></li>
-          </ul>
-        </li>
-        <li><a href="#revisi-laporan">Revisi Laporan Rentang 2020-2025</a></li>
-        <li><a href="#survey-kepuasan">Laporan Survey Kepuasan</a>
-          <ul class="dropd">
-            <li><a href="#triwulan1-2025">Triwulan 1 Tahun 2025</a></li>
-            <li><a href="#triwulan2-2025">Triwulan 2 Tahun 2025</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+      <li><a href="#standar-layanan">Standar Layanan</a>
+        <ul class="dropdown">
+          <li><a href="#maklumat-pelayanan">Maklumat Pelayanan</a></li>
+          <li><a href="#prosedur-permohonan">Prosedur Permohonan Informasi</a></li>
+          <li><a href="#prosedur-keberatan">Prosedur Pengajuan Keberatan</a></li>
+          <li><a href="#prosedur-sengketa">Prosedur Sengketa Informasi</a></li>
+          <li><a href="#pos-ap-ppid">POS AP PPID</a></li>
+          <li><a href="#alur-biaya">Alur dan Biaya Layanan</a></li>
+        </ul>
+      </li>
 
-    <!-- Inovasi -->
-    <li><a href="#inovasi">Inovasi</a>
-      <ul class="dropdown">
-        <li><a href="#apaluju">APALUJU</a></li>
-        <li><a href="#sidara">SIDARA</a></li>
-        <li><a href="#loket-ult">LOKET ULT</a></li>
-      </ul>
-    </li>
+      <li><a href="#informasi-publik">Informasi Publik</a>
+        <ul class="dropdown">
+          <li><a href="#daftar-informasi">Daftar Informasi Publik</a></li>
+          <li><a href="#informasi-publik-berkala">Informasi Publik Berkala</a></li>
+          <li><a href="#informasi-tiap-saat">Informasi Publik Tersedia Setiap Saat</a></li>
+          <li><a href="#informasi-serta-merta">Informasi Serta Merta</a></li>
+        </ul>
+      </li>
 
-    <!-- Ajukan Permohonan -->
-    <li><a href="#permohonan">Ajukan Permohonan</a></li>
-  </ul>
+      <li><a href="#laporan">Laporan</a>
+        <ul class="dropdown">
+          <li><a href="#daftar-permohonan-informasi">Daftar Permohonan Informasi Publik</a></li>
+          <li><a href="#laporan-tahunan">Laporan Tahunan PPID</a>
+            <ul class="dropd">
+              <li><a href="#laporan-2024">Laporan PPID Tahun 2024</a></li>
+            </ul>
+          </li>
+          <li><a href="#revisi-laporan">Revisi Laporan Rentang 2020-2025</a></li>
+          <li><a href="#survey-kepuasan">Laporan Survey Kepuasan</a>
+            <ul class="dropd">
+              <li><a href="#triwulan1-2025">Triwulan 1 Tahun 2025</a></li>
+              <li><a href="#triwulan2-2025">Triwulan 2 Tahun 2025</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
 
-  <nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
+      <li><a href="#inovasi">Inovasi</a>
+        <ul class="dropdown">
+          <li><a href="#apaluju">APALUJU</a></li>
+          <li><a href="#sidara">SIDARA</a></li>
+          <li><a href="#loket-ult">LOKET ULT</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#permohonan">Ajukan Permohonan</a></li>
+    </ul>
+
+    <!-- Search -->
     <form class="search-form" role="search">
       <input type="search" placeholder="Search" aria-label="Search" />
       <button type="submit">
         <i data-feather="search"></i>
       </button>
     </form>
-  </div>
-</nav>
-</nav>
+  </nav>
+  <!-- Navbar End -->
 
-    <!-- Navbar End -->
+  <!-- Hero Section Start -->
+  <section class="hero" id="home">
+    <main class="content">
+      <!-- Tambahkan konten di sini -->
+    </main>
+  </section>
+  <!-- Hero Section End -->
 
-    <!-- Hero Section Start -->
-    <section class="hero" id="home">
-        <main class="content">
-            <!-- Tambahkan konten di sini -->
-        </main>
-    </section>
-    <!-- Hero Section End -->
-
-    <!--Footer-->
-    <footer class="site-footer">
-      <div class="footer-container">
-        <div class="footer-content">
-          <p>&copy; 2025 BPMP Provinsi Riau.</p>
-          <p>Jl. Gajah No.21, Rejosari, Kec. Tenayan Raya, Kota Pekanbaru, Riau 28151 | Telp: (0761) 26389</p>
-        </div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <p>&copy; 2025 BPMP Provinsi Riau.</p>
+        <p>Jl. Gajah No.21, Rejosari, Kec. Tenayan Raya, Kota Pekanbaru, Riau 28151 | Telp: (0761) 26389</p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Feather Icons -->
-    <script>
-        feather.replace();
-    </script>
+  <!-- Feather Icons & Script -->
+  <script>
+    feather.replace();
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbarNav = document.getElementById('navbar-nav');
+
+    menuToggle.addEventListener('click', function () {
+      navbarNav.classList.toggle('show');
+
+      const icon = menuToggle.querySelector('i');
+      if (navbarNav.classList.contains('show')) {
+        icon.setAttribute('data-feather', 'x');
+      } else {
+        icon.setAttribute('data-feather', 'menu');
+      }
+      feather.replace();
+    });
+  </script>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
 </body>
 </html>
