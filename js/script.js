@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     feather.replace();
   });
 
-  // Tutup navbar jika klik di luar
   document.addEventListener("click", function (e) {
     if (
       navbarNav.classList.contains("show") &&
